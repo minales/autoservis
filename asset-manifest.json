@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/autoservis/static/css/main.073c9b0a.css",
+    "main.js": "/autoservis/static/js/main.e9a64fc5.js",
+    "static/js/787.d0479a15.chunk.js": "/autoservis/static/js/787.d0479a15.chunk.js",
+    "static/media/logo.svg": "/autoservis/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/autoservis/index.html",
+    "main.073c9b0a.css.map": "/autoservis/static/css/main.073c9b0a.css.map",
+    "main.e9a64fc5.js.map": "/autoservis/static/js/main.e9a64fc5.js.map",
+    "787.d0479a15.chunk.js.map": "/autoservis/static/js/787.d0479a15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.e9a64fc5.js"
+  ]
+}
