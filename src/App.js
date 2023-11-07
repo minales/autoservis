@@ -1,13 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import HeaderNavbar from './HeaderNavbar';
 import WaitPage from  './WaitPage';
+import Banner from './Banner';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <WaitPage />
-      </header>
+          <HeaderNavbar />
+          <WaitPage />       
+        {/*  <Banner />  */}
     </div>
   );
 }

@@ -3,24 +3,30 @@ import './WaitPage.css';
 function WaitPage() {
     
     return(
-        <>
-        <h1>Coming soon</h1>
-        <h4>Our website is under construction</h4>
-        <div class="screen">
-            <div class="road">
-                <div class="strip strip1"></div>
-                <div class="strip2 strip"></div>
-                <div class="car-wrap">
-                <div class="tops"></div>
-                <div class="window"></div>
-                <div class="back-window"></div>
-                <div class="car-body"></div>
-                <div class="wheel"></div>
-                <div class="bck-wheel"></div>
+        <section className='slider1'>
+            <div className="slide current1">
+                <img src={require("./images/automechanic.jpg")} className='slide-image1'/>
+                <div className="slide-content1">
+                    <h3 className="slide-title1">Autoservis Maleš</h3>
+                    <p className="slide-desc1">Svetozara Miletića 22, Bočar</p>
+                    <table>
+                        <tr className='slide-tableth'>
+                            <th>Slavko Maleš</th>
+                            <th>Milan Maleš</th>
+                        </tr>
+                        <tr className='slide-tabletd'>
+                            <td>062 8696397</td>
+                            <td>061 6263687</td>
+                        </tr>
+                        <tr className='slide-tabletd'>
+                            <td>slavkomales02@gmail.com</td>
+                            <td>milanmales22@gmail.com</td>
+                        </tr>
+                    </table>
+                    <p className='info'>Website je trenutno u izgradnji</p>
                 </div>
             </div>
-        </div>
-        </>
+        </section>
     )
 }
 

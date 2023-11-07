@@ -1,120 +1,102 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100vh;
-  }
-  .screen {
-    background-color: #bdf39e;
+.slider1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide1 {
+  position: absolute;
+  width: 100%;
+
+
+}
+
+@media screen and (min-width: 600px) {
+  .slide1 img {
     width: 100%;
     height: 100%;
-    position: relative;
   }
-  .road {
-    position: relative;
-    background-color: #444;
-    height: 150px;
-    width: 100%;
-    top: 100px;
-    overflow: hidden;
+}
+
+.slide1 img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.2);
+}
+
+.slide-content1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+ 
+}
+.slide-title1 {
+  width: 100%;
+  max-width: 50rem;
+  color: white;
+  font-size: 4rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: -3%;
+}
+.slide-desc1 {
+  width: 100%;
+  max-width: 50rem;
+  color: lightgray;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: -5%;
+}
+table {
+  margin-top: 2%;
+  border-spacing: 150px 0;
+}
+
+.slide-tableth {
+  width: 100%;
+  max-width: 50rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: -12%;
+  padding: 10%;
+}
+
+.slide-tabletd {
+  width: 100%;
+  max-width: 50rem;
+  color: lightgray;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: -7%;
+}
+
+.info {
+  position: fixed;
+  width: 100%;
+  max-width: 50rem;
+  color: lightgray;
+  font-size: 1rem;
+  font-weight: 100;
+  bottom: 0px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .slide {
+    width: 80%;
   }
-  .strip {
-    position: absolute;
-    background-color: #fff;
-    height: 10px;
-    width: 100px;
-    top: 50%;
-    margin-top: -5px;
-  }
-  .strip1 {left: 800px; animation: stipRun1 3s linear infinite;} 
-  .strip2 {right: 0; animation: stipRun2 3s linear infinite;} 
-  @keyframes stipRun1 {
-    10%{left: 400px;}
-    25%{left: 0;}
-    26%{left: auto;right:0;}
-    50%{left: auto; right: 400px;}
-    75%{left: auto; right: 800px;}
-    100%{left: auto; right: 1600px;}
-  }
-   @keyframes stipRun2 {
-    25%{right: 400px;}
-    50%{right: 800px;}
-    75%{right: 1200px;}
-    100%{right:2000px;}
-  } 
-  .car-wrap {
-    position: absolute;
-    left: 0;
-    top: 50px;
-    animation: car 3s linear infinite;
-  }
-  @keyframes car {
-    0% {left: 10px;}
-    10% {left: 10%;}
-    20% {left: 20%;}
-    30% {left: 30%;}
-    40% {left: 40%;}
-    50% {left: 50%;}
-    60% {left: 60%;}
-    70% {left: 70%;}
-    80% {left: 80%;}
-    90% {left: 90%;}
-    100% {left: 100%;}
-  }
-  .tops {
-    position: absolute;
-    height: 8px;
-    width: 30px;
-    top: -8px;
-    left: 30%;
-    background-color: #BF8500;
-    border-right: 3px solid #222;
-    border-left: 3px solid #222;
-  }
-  .car-body {
-    height: 30px;
-    width: 90px;
-    background-color: #f8b500;
-    border-radius: 20px 35px 5px 5px;
-  }
-  .window {
-    position: absolute;
-    top: 8px;
-    right: 15px;
-    height: 12px;
-    width: 16px;
-    opacity: .65;
-    background-color: #587899;
-    border-radius: 0 10px 0 0;
-  }
-  .back-window {
-    position: absolute;
-    top: 8px;
-    left: 15px;
-    height: 12px;
-    width: 25px;
-    opacity: .65;
-    background-color: #587899;
-    border-radius: 5px 0 0 0;
-  }
-  .wheel {
-    position: absolute;
-    bottom: -9px;
-    right: 10px;
-    border: 5px solid #111;
-    background-color: #ddd;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-  }
-  .bck-wheel {
-    position: absolute;
-    bottom: -9px;
-    left: 5px;
-    border: 5px solid #111;
-    background-color: #ddd;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-  }
-  
+}
+
