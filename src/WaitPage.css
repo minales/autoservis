@@ -61,6 +61,7 @@
 table {
   margin-top: 2%;
   border-spacing: 150px 0;
+
 }
 
 .slide-tableth {
@@ -72,6 +73,7 @@ table {
   text-transform: capitalize;
   margin-top: -12%;
   padding: 10%;
+ 
 }
 
 .slide-tabletd {
@@ -81,6 +83,7 @@ table {
   font-size: 1.5rem;
   font-weight: 300;
   margin-top: -7%;
+
 }
 
 .info {
@@ -92,11 +95,60 @@ table {
   font-weight: 100;
   bottom: 0px;
 }
+ 
+.table2 {
+  display: none;
+}
 
+@media screen and (max-width: 700px) {
+  table {
+    display: none;
+  }
 
-@media screen and (max-width: 600px) {
-  .slide {
-    width: 80%;
+  .table2 {
+    display: contents;
+    width: 100%;
+    max-width: 50rem;
+    color: lightgray;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10%;
+  }
+
+  .slide-title1 {
+    margin-top: 15%;
+    margin-bottom: 0;
+  }
+
+  .slide-desc1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .table2box {
+    margin-top: 10%;
+  }
+  
+  .table2-title {
+    margin: 2%;
+    width: 100%;
+    max-width: 50rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .table2-desc1 {
+    margin: 0;
+  }
+
+  .table2-desc2 {
+    margin: 0;
+  }
+
+  .info {
+    font-size: 0.8rem;
   }
 }
 
